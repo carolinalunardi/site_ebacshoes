@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+body > header {
+    background-color: #222f52;
+    padding: 16px 0;
+    color: #e7e7e7;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header li {
+    display: inline;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #e7e7e7;
+    text-decoration: none;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 38% 58%;
+    column-gap: 4%;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    margin:36px 0 65px 0;
+}
+
+.destaque {
+    max-width: 100%;
+}
+
+h2 {
+    color: #222f52;
+    font-style: italic;
+    border-bottom: 2px solid #222f52;
+    padding-bottom: 16px;
+}
+
+.destaque  p {
+    margin-top: 36px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 2%;
+    margin-top: 36px;
+}
+
+.produtos h2 {
+    color: #000;
+    border-bottom: none;
+    padding-top: 50px;
+}
+
+.produtos p {
+    font-size: small;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #222f52;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 16px 0 32px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+    main {
+        margin:36px 0 65px 0;
+    }
+
+    h2 {
+        padding: 16px 0 16px 0;
+    } 
+
+    .produtos {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    h2 {
+        padding: 16px 0 16px 0;
+    }
+    
+    .produtos {
+        grid-template-columns: repeat(2, 49% );
+    }
+    
+}
